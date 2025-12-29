@@ -66,6 +66,8 @@ const Hero = () => {
               </a>
               <a
                 href="mailto:zshrakey@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
               >
                 <Mail size={24} className="text-green-600" />
