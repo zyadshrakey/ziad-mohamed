@@ -3,15 +3,12 @@ import Menu from "lucide-react/dist/esm/icons/menu";
 import X from "lucide-react/dist/esm/icons/x";
 import Moon from "lucide-react/dist/esm/icons/moon";
 import Sun from "lucide-react/dist/esm/icons/sun";
-import Globe from "lucide-react/dist/esm/icons/globe";
 import { useTheme } from "../../contexts/ThemeContext";
-import { useLanguage } from "../../contexts/LanguageContext";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { isDark, toggleTheme } = useTheme();
-  const { language, toggleLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,12 +19,12 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { href: "#home", label: t("nav.home") },
-    { href: "#about", label: t("nav.about") },
-    { href: "#experience", label: t("nav.experience") },
-    { href: "#skills", label: t("nav.skills") },
-    { href: "#projects", label: t("nav.projects") },
-    { href: "#contact", label: t("nav.contact") },
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#experience", label: "Experience" },
+    { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
@@ -41,15 +38,11 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            {t("hero.name")}
+            Ziad Rizk
           </div>
 
           {/* Desktop Navigation */}
-          <div
-            className={`hidden md:flex items-center ${
-              language === "ar" ? "space-x-reverse space-x-8" : "space-x-8"
-            }`}
-          >
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -68,18 +61,6 @@ const Header = () => {
             >
               {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-
-            {/* Language Toggle */}
-            <button
-              onClick={toggleLanguage}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors flex items-center gap-1"
-              aria-label="Toggle language"
-            >
-              <Globe size={16} />
-              <span className="text-sm font-medium">
-                {language === "ar" ? "EN" : "ع"}
-              </span>
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -90,17 +71,6 @@ const Header = () => {
               aria-label="Toggle theme"
             >
               {isDark ? <Sun size={18} /> : <Moon size={18} />}
-            </button>
-
-            <button
-              onClick={toggleLanguage}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 flex items-center gap-1"
-              aria-label="Toggle language"
-            >
-              <Globe size={14} />
-              <span className="text-xs font-medium">
-                {language === "ar" ? "EN" : "ع"}
-              </span>
             </button>
 
             <button

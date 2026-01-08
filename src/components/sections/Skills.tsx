@@ -1,40 +1,33 @@
-import { useLanguage } from "../../contexts/LanguageContext";
-
 const Skills = () => {
-  const { t } = useLanguage();
+  // const { t } = useLanguage();
 
   const skillCategories = [
     {
-      title: t("skills.frontend"),
+      title: "Languages & Core",
       skills: [
-        { name: "React", level: 90 },
-        { name: "JavaScript", level: 85 },
+        { name: "JavaScript (ES6+)", level: 85 },
         { name: "TypeScript", level: 80 },
         { name: "HTML5/CSS3", level: 90 },
-        { name: "Bootstrap", level: 85 },
-        { name: "Tailwind CSS", level: 75 },
       ],
     },
     {
-      title: t("skills.tools"),
+      title: "Frameworks & State",
       skills: [
-        { name: "Git/GitHub", level: 85 },
-        { name: "VS Code", level: 90 },
-        { name: "Node.js", level: 70 },
-        { name: "REST APIs", level: 80 },
-        { name: "Responsive Design", level: 85 },
-        { name: "Agile/Scrum", level: 75 },
+        { name: "React.js", level: 85 },
+        { name: "Angular (v14+)", level: 75 },
+        { name: "Redux", level: 75 },
+        { name: "React Query", level: 70 },
+        { name: "RxJS", level: 65 },
       ],
     },
     {
-      title: t("skills.additional"),
+      title: "UI & Tools",
       skills: [
-        { name: "Problem Solving", level: 90 },
-        { name: "Team Collaboration", level: 85 },
-        { name: "Code Review", level: 80 },
-        { name: "Testing", level: 75 },
-        { name: "Performance Optimization", level: 80 },
-        { name: "UI/UX Understanding", level: 75 },
+        { name: "Tailwind CSS", level: 85 },
+        { name: "Ant Design", level: 80 },
+        { name: "Material UI", level: 80 },
+        { name: "Git & GitHub", level: 80 },
+        { name: "Keycloak", level: 65 },
       ],
     },
   ];
@@ -44,11 +37,11 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            {t("skills.title")}
+            Technical Skills
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            {t("skills.description")}
+            A comprehensive overview of my technical expertise and tools I use.
           </p>
         </div>
 

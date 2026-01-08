@@ -2,11 +2,8 @@ import Github from "lucide-react/dist/esm/icons/github";
 import Linkedin from "lucide-react/dist/esm/icons/linkedin";
 import Mail from "lucide-react/dist/esm/icons/mail";
 import Download from "lucide-react/dist/esm/icons/download";
-import { useLanguage } from "../../contexts/LanguageContext";
 
 const Hero = () => {
-  const { t } = useLanguage();
-
   return (
     <section
       id="home"
@@ -16,16 +13,20 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              {t("hero.greeting")}
+              Hello, I'm{" "}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                {t("hero.name")}
+                Ziad Mohamed Rizk
               </span>
             </h1>
             <h2 className="text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-6">
-              {t("hero.title")}
+              Frontend Engineer | React & Angular
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
-              {t("hero.description")}
+              Frontend Developer with 2+ years of experience building scalable
+              and responsive web applications using React.js, Angular and
+              TypeScript. Strong experience in integrating RESTful APIs,
+              implementing clean UI architectures, and collaborating with
+              cross-functional teams to deliver high-quality products.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -33,14 +34,15 @@ const Hero = () => {
                 href="#contact"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
               >
-                {t("hero.contact")}
+                Contact Me
               </a>
               <a
-                href="/cv.pdf"
+                href="/cv/Ziad-Mohamed-Rizk-Resume.pdf"
+                download
                 className="border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-all duration-200 flex items-center gap-2 justify-center"
               >
                 <Download size={20} />
-                {t("hero.download")}
+                Download CV
               </a>
             </div>
 
@@ -75,12 +77,12 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 flex justify-center">
+          <div className="lg:w-1/2 flex justify-center max-md:pb-6">
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-8 border-white dark:border-gray-700">
                 <img
-                  src="/Hero.png"
-                  alt={t("hero.name")}
+                  src="./public/imgs/Hero.png"
+                  alt="Ziad Mohamed Rizk"
                   className="w-full h-full object-cover"
                 />
               </div>

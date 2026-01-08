@@ -10,86 +10,6 @@ interface LanguageContextType {
 
 const translations = {
   ar: {
-    // Navigation
-    'nav.home': 'الرئيسية',
-    'nav.about': 'نبذة عني',
-    'nav.experience': 'الخبرة',
-    'nav.skills': 'المهارات',
-    'nav.projects': 'المشاريع',
-    'nav.contact': 'تواصل معي',
-    
-    // Hero Section
-    'hero.greeting': 'مرحباً، أنا',
-    'hero.name': 'زياد محمد',
-    'hero.title': 'مطور React ومهندس الواجهة الأمامية',
-    'hero.description': 'مطور React متخصص في بناء تطبيقات الويب الحديثة باستخدام أحدث التقنيات. خبرة في React، TypeScript، وبناء واجهات مستخدم متجاوبة وسهلة الاستخدام.',
-    'hero.contact': 'تواصل معي',
-    'hero.download': 'تحميل السيرة الذاتية',
-    
-    // About Section
-    'about.title': 'نبذة عني',
-    'about.subtitle': 'مطور React متحمس مع رؤية واضحة',
-    'about.description1': 'أنا مطور React مخصص مع أساس قوي في تقنيات الويب الحديثة. رحلتي في تطوير البرمجيات مدفوعة بشغف لإنشاء تطبيقات بديهية وسهلة الاستخدام تحل المشاكل الحقيقية.',
-    'about.description2': 'مع خبرة في تقنيات الواجهة الأمامية والخلفية، أقدم فهماً شاملاً لدورة التطوير الكاملة. أنا متحمس بشكل خاص لنظام React البيئي، TypeScript، وممارسات التطوير الحديثة.',
-    'about.description3': 'عندما لا أكون أبرمج، ستجدني أستكشف تقنيات جديدة، أساهم في مشاريع مفتوحة المصدر، أو أشارك المعرفة مع مجتمع المطورين.',
-    'about.highlight1.title': 'تطوير متقدم',
-    'about.highlight1.desc': 'خبرة في React، TypeScript، وأحدث تقنيات تطوير الويب',
-    'about.highlight2.title': 'حلول إبداعية',
-    'about.highlight2.desc': 'القدرة على إيجاد حلول مبتكرة للمشاكل التقنية المعقدة',
-    'about.highlight3.title': 'العمل الجماعي',
-    'about.highlight3.desc': 'مهارات تواصل ممتازة وقدرة على العمل ضمن فريق',
-    'about.highlight4.title': 'التركيز على النتائج',
-    'about.highlight4.desc': 'التزام بتقديم حلول عالية الجودة تلبي احتياجات العملاء',
-    
-    // Skills Section
-    'skills.title': 'المهارات والتقنيات',
-    'skills.description': 'هذه هي التقنيات والأدوات التي أعمل بها لتحويل الأفكار إلى واقع',
-    'skills.frontend': 'تقنيات الواجهة الأمامية',
-    'skills.tools': 'الأدوات والتقنيات',
-    'skills.additional': 'مهارات إضافية',
-    
-    // Experience Section
-    'experience.title': 'الخبرة والإنجازات',
-    'experience.professional': 'الخبرة المهنية',
-    'experience.achievements': 'الإنجازات',
-    'experience.job1.title': 'React Developer',
-    'experience.job1.company': 'شركة تقنية متقدمة',
-    'experience.job1.location': 'العمل عن بُعد',
-    'experience.job1.period': '2023 - حتى الآن',
-    'experience.job2.title': 'Frontend Developer',
-    'experience.job2.company': 'وكالة رقمية',
-    'experience.job2.location': 'القاهرة، مصر',
-    'experience.job2.period': '2022 - 2023',
-    'experience.job3.title': 'Junior Web Developer',
-    'experience.job3.company': 'مركز الشركات الناشئة',
-    'experience.job3.location': 'القاهرة، مصر',
-    'experience.job3.period': '2021 - 2022',
-    
-    // Projects Section
-    'projects.title': 'المشاريع المميزة',
-    'projects.description': 'هنا بعض من مشاريعي الحديثة التي تعرض مهاراتي وشغفي بالتطوير',
-    'projects.liveDemo': 'عرض مباشر',
-    'projects.sourceCode': 'الكود المصدري',
-    
-    // Contact Section
-    'contact.title': 'تواصل معي',
-    'contact.description': 'أنا دائماً منفتح لمناقشة الفرص الجديدة، المشاريع المثيرة، أو مجرد الدردشة حول التكنولوجيا.',
-    'contact.connect': 'لنتواصل',
-    'contact.email': 'البريد الإلكتروني',
-    'contact.phone': 'الهاتف',
-    'contact.location': 'الموقع',
-    'contact.name': 'الاسم',
-    'contact.subject': 'الموضوع',
-    'contact.message': 'الرسالة',
-    'contact.send': 'إرسال الرسالة',
-    'contact.namePlaceholder': 'اسمك',
-    'contact.subjectPlaceholder': 'ما هو موضوع رسالتك؟',
-    'contact.messagePlaceholder': 'أخبرني عن مشروعك أو قل مرحباً فقط!',
-    
-    // Footer
-    'footer.madeWith': 'صُنع بـ',
-    'footer.using': 'باستخدام React و TypeScript',
-    'footer.rights': 'جميع الحقوق محفوظة.',
   },
   en: {
     // Navigation
@@ -101,7 +21,7 @@ const translations = {
     'nav.contact': 'Contact',
     
     // Hero Section
-    'hero.greeting': "Hi, I'm",
+    'hero.greeting': "Hi, I'm ",
     'hero.name': 'Ziad Mohamed',
     'hero.title': 'React Developer & Frontend Engineer',
     'hero.description': 'Passionate about creating exceptional user experiences with modern web technologies. Specialized in React, TypeScript, and building scalable frontend applications.',
